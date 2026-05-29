@@ -1,1 +1,567 @@
-a
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Buchholz Reisen GmbH | Busunternehmen aus Lebach</title>
+<meta name="description" content="Buchholz Reisen GmbH aus Lebach-Steinbach: Busunternehmen für Vereine, Schulen, Reiseveranstalter, Gruppenfahrten, Schülerbeförderung, Linienbusse und Reisebusse.">
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f6f3ee;
+    color:#1c1c1c;
+    line-height:1.6;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+
+.topbar{
+    background:#151515;
+    color:white;
+    padding:10px 22px;
+    display:flex;
+    justify-content:center;
+    gap:26px;
+    flex-wrap:wrap;
+    font-size:14px;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(12px);
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    padding:14px 26px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo img{
+    height:58px;
+    width:auto;
+}
+
+.navlinks a{
+    margin-left:18px;
+    font-weight:bold;
+    color:#8d1118;
+}
+
+.hero{
+    min-height:88vh;
+    background:
+    linear-gradient(90deg,rgba(20,10,8,.88),rgba(20,10,8,.58),rgba(20,10,8,.18)),
+    url("IMG_82CD2758-8F4E-4B48-ADFD-531CEA687FCD.jpeg");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:90px 24px;
+}
+
+.hero-content{
+    max-width:1150px;
+    width:100%;
+    margin:auto;
+}
+
+.badge{
+    display:inline-block;
+    background:#b5121b;
+    color:white;
+    padding:9px 16px;
+    border-radius:999px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.08;
+    max-width:780px;
+    margin:0 0 20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:720px;
+    color:#f3f3f3;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.btn{
+    padding:15px 24px;
+    border-radius:12px;
+    font-weight:bold;
+    display:inline-block;
+}
+
+.primary{
+    background:#b5121b;
+    color:white;
+}
+
+.secondary{
+    background:white;
+    color:#151515;
+}
+
+section{
+    max-width:1150px;
+    margin:auto;
+    padding:75px 24px;
+}
+
+h2{
+    font-size:38px;
+    color:#8d1118;
+    margin-top:0;
+}
+
+.lead{
+    font-size:20px;
+    max-width:850px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:24px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#8d1118;
+    margin-top:10px;
+}
+
+.icon{
+    font-size:38px;
+}
+
+.dark{
+    max-width:none;
+    background:#151515;
+    color:white;
+}
+
+.dark-inner{
+    max-width:1150px;
+    margin:auto;
+    padding:75px 24px;
+}
+
+.dark h2{color:white}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+    text-align:center;
+}
+
+.stat{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    padding:28px;
+    border-radius:20px;
+}
+
+.stat strong{
+    color:#d4a24c;
+    font-size:38px;
+    display:block;
+}
+
+.split{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:34px;
+    align-items:center;
+}
+
+.photo{
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 15px 45px rgba(0,0,0,.16);
+    background:white;
+}
+
+.photo img{
+    width:100%;
+}
+
+.band{
+    max-width:none;
+    background:
+    linear-gradient(rgba(12,12,12,.72),rgba(12,12,12,.72)),
+    url("9702A229-3678-471A-A307-37518069E1E1.png");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+}
+
+.band-inner{
+    max-width:1000px;
+    margin:auto;
+    padding:90px 24px;
+}
+
+.band h2{
+    color:white;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:28px;
+}
+
+input,textarea{
+    width:100%;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:12px;
+    margin-bottom:12px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    padding:16px;
+    border:none;
+    background:#8d1118;
+    color:white;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.note{
+    color:#666;
+    font-size:14px;
+}
+
+footer{
+    background:#151515;
+    color:white;
+    text-align:center;
+    padding:35px 20px;
+}
+
+.floating{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    z-index:999;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.floating a{
+    background:#b5121b;
+    color:white;
+    padding:14px 18px;
+    border-radius:999px;
+    font-weight:bold;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+@media(max-width:760px){
+    nav{
+        display:block;
+        text-align:center;
+    }
+
+    .logo img{
+        margin:auto;
+        height:48px;
+    }
+
+    .navlinks{
+        margin-top:10px;
+    }
+
+    .navlinks a{
+        display:inline-block;
+        margin:6px;
+        font-size:14px;
+    }
+
+    .hero{
+        min-height:82vh;
+        background:
+        linear-gradient(rgba(20,10,8,.82),rgba(20,10,8,.80)),
+        url("IMG_82CD2758-8F4E-4B48-ADFD-531CEA687FCD.jpeg");
+        background-size:cover;
+        background-position:center;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .split,
+    .contact{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <span>📍 In der Au 14, 66822 Lebach</span>
+    <span>☎ 06888 / 222</span>
+    <span>✉ info@buchholz-reisen.de</span>
+</div>
+
+<nav>
+    <div class="logo">
+        <img src="F596B490-D891-45B2-916A-5E4340266945.png" alt="Buchholz Reisen Logo">
+    </div>
+
+    <div class="navlinks">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#unternehmen">Unternehmen</a>
+        <a href="#fuhrpark">Fuhrpark</a>
+        <a href="#kontakt">Kontakt</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-content">
+        <span class="badge">Busunternehmen seit 1951</span>
+        <h1>Mobilität für Gruppen, Vereine, Schulen und Reiseveranstalter</h1>
+        <p>
+            Buchholz Reisen steht für sichere Busfahrten, zuverlässige Planung und persönliche Betreuung —
+            vom täglichen Schülerverkehr bis zur komfortablen Gruppenreise.
+        </p>
+
+        <div class="buttons">
+            <a class="btn primary" href="tel:06888222">Jetzt anrufen</a>
+            <a class="btn secondary" href="#kontakt">Fahrt anfragen</a>
+        </div>
+    </div>
+</header>
+
+<section>
+    <h2>Professionelle Buslösungen aus Lebach-Steinbach</h2>
+    <p class="lead">
+        Ob Verein, Schule, Unternehmen, Gemeinde oder Reiseveranstalter:
+        Wir bringen Menschen zuverlässig ans Ziel. Mit erfahrenen Fahrerinnen und Fahrern,
+        gepflegtem Fuhrpark und einem Team, das weiß, worauf es bei Gruppenfahrten ankommt.
+    </p>
+</section>
+
+<section id="leistungen">
+    <h2>Unsere Leistungen</h2>
+
+    <div class="grid">
+        <div class="card">
+            <div class="icon">🚌</div>
+            <h3>Gruppen- & Vereinsfahrten</h3>
+            <p>Ausflüge, Tagesfahrten, Mehrtagesreisen und Vereinsfahrten — individuell geplant und zuverlässig durchgeführt.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🎒</div>
+            <h3>Schülerbeförderung</h3>
+            <p>Sichere und verlässliche Beförderung von Schülerinnen und Schülern im täglichen Verkehr.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌍</div>
+            <h3>Reiseveranstalter</h3>
+            <p>Komfortable Buskapazitäten für Reiseveranstalter, Gruppenreisen, Rundreisen und Sonderfahrten.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏢</div>
+            <h3>Firmen & Gemeinden</h3>
+            <p>Shuttlefahrten, Betriebsausflüge, Veranstaltungsverkehr und individuelle Mobilitätslösungen.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛣️</div>
+            <h3>Linienverkehr</h3>
+            <p>Erfahrung im Linienverkehr mit geschultem Fahrpersonal und zuverlässiger Einsatzplanung.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Komfort-Reisebusse</h3>
+            <p>Angenehm reisen mit modernen Fahrzeugen, gepflegtem Innenraum und routinierten Fahrern.</p>
+        </div>
+    </div>
+</section>
+
+<div class="dark">
+    <div class="dark-inner">
+        <h2>Zahlen, die Vertrauen schaffen</h2>
+
+        <div class="stats">
+            <div class="stat"><strong>1951</strong>gegründet</div>
+            <div class="stat"><strong>30+</strong>Mitarbeiter</div>
+            <div class="stat"><strong>60+</strong>Jahre Familienbetrieb</div>
+            <div class="stat"><strong>2.</strong>Generation</div>
+        </div>
+    </div>
+</div>
+
+<section id="unternehmen">
+    <div class="split">
+        <div>
+            <h2>Ein Unternehmen mit Geschichte und Verantwortung</h2>
+            <p>
+                Buchholz Reisen wurde 1951 von Helmut und Hedwig Buchholz in Lebach-Steinbach gegründet.
+                Heute führt Michael Buchholz das Unternehmen als Geschäftsführer in zweiter Generation.
+            </p>
+            <p>
+                Das Unternehmen verbindet gewachsene Erfahrung mit moderner Organisation.
+                Im Mittelpunkt stehen Sicherheit, Zuverlässigkeit und ein persönlicher Umgang mit Kunden und Fahrgästen.
+            </p>
+        </div>
+
+        <div class="photo">
+            <img src="IMG_1CB30F8A-7D21-4E7D-9EF9-A26B02747FBE.jpeg" alt="Michael Buchholz Geschäftsführer">
+        </div>
+    </div>
+</section>
+
+<section id="fuhrpark">
+    <div class="split">
+        <div class="photo">
+            <img src="IMG_1EC11945-CC71-4A8C-8417-2D39F0914E9D.jpeg" alt="Buchholz Reisen Bus Logo">
+        </div>
+
+        <div>
+            <h2>Fuhrpark für Alltag, Schule und Reise</h2>
+            <p>
+                Vom Linienbus bis zum komfortablen Reisebus: Buchholz Reisen bietet passende Fahrzeuge
+                für unterschiedliche Einsätze — zuverlässig geplant und professionell betreut.
+            </p>
+            <p>
+                Für Schulen, Vereine und Reiseveranstalter zählt nicht nur der Bus selbst,
+                sondern auch die Organisation dahinter: pünktlich, sicher und verbindlich.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="band">
+    <div class="band-inner">
+        <h2>Bereit für die nächste Fahrt?</h2>
+        <p>
+            Ob Klassenfahrt, Vereinsausflug, Gruppenreise oder Shuttle:
+            Wir beraten Sie persönlich und finden die passende Lösung.
+        </p>
+        <a class="btn primary" href="#kontakt">Jetzt Anfrage stellen</a>
+    </div>
+</div>
+
+<section>
+    <h2>Sicherheit beginnt beim Team</h2>
+    <p class="lead">
+        Erfahrene Fahrerinnen und Fahrer, regelmäßige Schulungen und ein verantwortungsvoller Umgang
+        mit Fahrzeugen und Fahrgästen sorgen dafür, dass jede Fahrt gut vorbereitet startet.
+    </p>
+</section>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+
+    <div class="contact">
+        <div class="card">
+            <h3>Buchholz Reisen GmbH</h3>
+            <p><strong>Adresse:</strong><br>In der Au 14<br>66822 Lebach-Steinbach</p>
+            <p><strong>Telefon:</strong><br><a href="tel:06888222">06888 / 222</a></p>
+            <p><strong>Fax:</strong><br>06888 / 57071</p>
+            <p><strong>E-Mail:</strong><br><a href="mailto:info@buchholz-reisen.de">info@buchholz-reisen.de</a></p>
+        </div>
+
+        <div class="card">
+            <h3>Fahrt anfragen</h3>
+            <form>
+                <input type="text" placeholder="Name / Verein / Firma">
+                <input type="email" placeholder="E-Mail">
+                <input type="tel" placeholder="Telefon">
+                <textarea rows="5" placeholder="Wohin soll die Fahrt gehen? Wann? Wie viele Personen?"></textarea>
+                <button type="button">Anfrage senden</button>
+            </form>
+            <p class="note">Demo: Das Formular verschickt noch keine echte E-Mail.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Standort</h2>
+    <iframe
+        src="https://www.google.com/maps?q=In%20der%20Au%2014%2C%2066822%20Lebach&output=embed"
+        width="100%"
+        height="360"
+        style="border:0;border-radius:22px;"
+        loading="lazy">
+    </iframe>
+</section>
+
+<section>
+    <h2>Impressum</h2>
+    <p>
+        Buchholz Reisen GmbH<br>
+        In der Au 14<br>
+        66822 Lebach
+    </p>
+    <p>
+        Telefon: 06888 / 222<br>
+        Fax: 06888 / 57071<br>
+        E-Mail: info@buchholz-reisen.de
+    </p>
+    <p>
+        Geschäftsführer: Michael Buchholz
+    </p>
+    <p class="note">
+        Demo-Website. Rechtliche Angaben wie Registergericht, Handelsregisternummer,
+        Umsatzsteuer-ID und Datenschutz sollten vor Veröffentlichung final geprüft werden.
+    </p>
+</section>
+
+<footer>
+    © 2026 Buchholz Reisen GmbH · Lebach-Steinbach
+</footer>
+
+<div class="floating">
+    <a href="tel:06888222">☎ Anrufen</a>
+    <a href="mailto:info@buchholz-reisen.de">✉ Anfrage</a>
+</div>
+
+</body>
+</html>
