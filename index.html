@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Buchholz Reisen GmbH | Busunternehmen aus Lebach</title>
-<meta name="description" content="Buchholz Reisen GmbH aus Lebach-Steinbach: Busunternehmen für Vereine, Schulen, Reiseveranstalter, Gruppenfahrten, Schülerbeförderung, Linienbusse und Reisebusse.">
+<meta name="description" content="Buchholz Reisen GmbH aus Lebach-Steinbach. Busfahrten für Vereine, Schulen, Gruppen, Reiseveranstalter und Unternehmen. Seit 1951 zuverlässig unterwegs.">
 
 <style>
 *{box-sizing:border-box}
@@ -13,15 +13,23 @@ html{scroll-behavior:smooth}
 body{
     margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:#f6f3ee;
-    color:#1c1c1c;
-    line-height:1.6;
+    background:#f7f3ec;
+    color:#1f1f1f;
+    line-height:1.65;
 }
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
 
+:root{
+    --dark:#171717;
+    --red:#9f141b;
+    --gold:#c79a45;
+    --cream:#f7f3ec;
+    --white:#ffffff;
+}
+
 .topbar{
-    background:#151515;
+    background:var(--dark);
     color:white;
     padding:10px 22px;
     display:flex;
@@ -35,10 +43,10 @@ nav{
     position:sticky;
     top:0;
     z-index:100;
-    background:rgba(255,255,255,.95);
+    background:rgba(255,255,255,.96);
     backdrop-filter:blur(12px);
     box-shadow:0 8px 25px rgba(0,0,0,.08);
-    padding:14px 26px;
+    padding:14px 28px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -46,19 +54,18 @@ nav{
 
 .logo img{
     height:58px;
-    width:auto;
 }
 
 .navlinks a{
     margin-left:18px;
     font-weight:bold;
-    color:#8d1118;
+    color:var(--dark);
 }
 
 .hero{
     min-height:88vh;
     background:
-    linear-gradient(90deg,rgba(20,10,8,.88),rgba(20,10,8,.58),rgba(20,10,8,.18)),
+    linear-gradient(90deg,rgba(20,15,12,.86),rgba(20,15,12,.52),rgba(20,15,12,.18)),
     url("IMG_82CD2758-8F4E-4B48-ADFD-531CEA687FCD.jpeg");
     background-size:cover;
     background-position:center;
@@ -70,38 +77,38 @@ nav{
 
 .hero-content{
     max-width:1150px;
-    width:100%;
     margin:auto;
+    width:100%;
 }
 
 .badge{
     display:inline-block;
-    background:#b5121b;
+    background:var(--red);
     color:white;
     padding:9px 16px;
     border-radius:999px;
     font-weight:bold;
-    margin-bottom:20px;
+    margin-bottom:22px;
 }
 
 .hero h1{
-    font-size:58px;
+    font-size:60px;
     line-height:1.08;
     max-width:780px;
-    margin:0 0 20px;
+    margin:0 0 22px;
 }
 
 .hero p{
     font-size:22px;
     max-width:720px;
-    color:#f3f3f3;
+    color:#f2f2f2;
 }
 
 .buttons{
     display:flex;
     gap:14px;
     flex-wrap:wrap;
-    margin-top:30px;
+    margin-top:32px;
 }
 
 .btn{
@@ -112,25 +119,27 @@ nav{
 }
 
 .primary{
-    background:#b5121b;
+    background:var(--red);
     color:white;
 }
 
 .secondary{
     background:white;
-    color:#151515;
+    color:var(--dark);
 }
 
 section{
     max-width:1150px;
     margin:auto;
-    padding:75px 24px;
+    padding:78px 24px;
 }
 
 h2{
-    font-size:38px;
-    color:#8d1118;
+    font-size:40px;
+    line-height:1.15;
+    color:var(--red);
     margin-top:0;
+    margin-bottom:20px;
 }
 
 .lead{
@@ -146,13 +155,14 @@ h2{
 
 .card{
     background:white;
-    padding:28px;
-    border-radius:22px;
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    padding:30px;
+    border-radius:24px;
+    box-shadow:0 16px 45px rgba(0,0,0,.08);
 }
 
 .card h3{
-    color:#8d1118;
+    color:var(--dark);
+    font-size:24px;
     margin-top:10px;
 }
 
@@ -160,23 +170,24 @@ h2{
     font-size:38px;
 }
 
-.dark{
-    max-width:none;
-    background:#151515;
+.stats-wrap{
+    background:var(--dark);
     color:white;
 }
 
-.dark-inner{
+.stats-inner{
     max-width:1150px;
     margin:auto;
-    padding:75px 24px;
+    padding:70px 24px;
 }
 
-.dark h2{color:white}
+.stats-inner h2{
+    color:white;
+}
 
 .stats{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
     gap:20px;
     text-align:center;
 }
@@ -185,26 +196,27 @@ h2{
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.12);
     padding:28px;
-    border-radius:20px;
+    border-radius:22px;
 }
 
 .stat strong{
-    color:#d4a24c;
-    font-size:38px;
     display:block;
+    font-size:40px;
+    color:var(--gold);
+    margin-bottom:5px;
 }
 
 .split{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:34px;
+    gap:38px;
     align-items:center;
 }
 
 .photo{
-    border-radius:24px;
+    border-radius:26px;
     overflow:hidden;
-    box-shadow:0 15px 45px rgba(0,0,0,.16);
+    box-shadow:0 18px 50px rgba(0,0,0,.16);
     background:white;
 }
 
@@ -212,10 +224,19 @@ h2{
     width:100%;
 }
 
-.band{
+.quote{
+    background:white;
+    border-left:6px solid var(--gold);
+    padding:24px;
+    border-radius:18px;
+    margin-top:25px;
+    box-shadow:0 12px 35px rgba(0,0,0,.07);
+}
+
+.alps{
     max-width:none;
     background:
-    linear-gradient(rgba(12,12,12,.72),rgba(12,12,12,.72)),
+    linear-gradient(rgba(15,15,15,.68),rgba(15,15,15,.68)),
     url("9702A229-3678-471A-A307-37518069E1E1.png");
     background-size:cover;
     background-position:center;
@@ -223,14 +244,43 @@ h2{
     text-align:center;
 }
 
-.band-inner{
-    max-width:1000px;
+.alps-inner{
+    max-width:900px;
     margin:auto;
-    padding:90px 24px;
+    padding:110px 24px;
 }
 
-.band h2{
+.alps h2{
     color:white;
+}
+
+.jobs{
+    background:white;
+    border-radius:28px;
+    padding:34px;
+    box-shadow:0 18px 50px rgba(0,0,0,.10);
+}
+
+.job-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    margin-top:24px;
+}
+
+.job-box{
+    background:#f7f3ec;
+    padding:24px;
+    border-radius:20px;
+}
+
+.job-box h4{
+    margin-top:0;
+    color:var(--red);
+}
+
+.job-box ul{
+    padding-left:20px;
 }
 
 .contact{
@@ -252,7 +302,7 @@ button{
     width:100%;
     padding:16px;
     border:none;
-    background:#8d1118;
+    background:var(--red);
     color:white;
     border-radius:12px;
     font-size:16px;
@@ -265,10 +315,10 @@ button{
 }
 
 footer{
-    background:#151515;
+    background:var(--dark);
     color:white;
     text-align:center;
-    padding:35px 20px;
+    padding:38px 20px;
 }
 
 .floating{
@@ -282,7 +332,7 @@ footer{
 }
 
 .floating a{
-    background:#b5121b;
+    background:var(--red);
     color:white;
     padding:14px 18px;
     border-radius:999px;
@@ -290,7 +340,7 @@ footer{
     box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
-@media(max-width:760px){
+@media(max-width:780px){
     nav{
         display:block;
         text-align:center;
@@ -314,7 +364,7 @@ footer{
     .hero{
         min-height:82vh;
         background:
-        linear-gradient(rgba(20,10,8,.82),rgba(20,10,8,.80)),
+        linear-gradient(rgba(20,15,12,.82),rgba(20,15,12,.80)),
         url("IMG_82CD2758-8F4E-4B48-ADFD-531CEA687FCD.jpeg");
         background-size:cover;
         background-position:center;
@@ -329,8 +379,13 @@ footer{
     }
 
     .split,
-    .contact{
+    .contact,
+    .job-grid{
         grid-template-columns:1fr;
+    }
+
+    section{
+        padding:60px 20px;
     }
 }
 </style>
@@ -352,7 +407,7 @@ footer{
     <div class="navlinks">
         <a href="#leistungen">Leistungen</a>
         <a href="#unternehmen">Unternehmen</a>
-        <a href="#fuhrpark">Fuhrpark</a>
+        <a href="#jobs">Karriere</a>
         <a href="#kontakt">Kontakt</a>
     </div>
 </nav>
@@ -360,79 +415,78 @@ footer{
 <header class="hero">
     <div class="hero-content">
         <span class="badge">Busunternehmen seit 1951</span>
-        <h1>Mobilität für Gruppen, Vereine, Schulen und Reiseveranstalter</h1>
+        <h1>Menschen sicher ans Ziel bringen. Seit 1951.</h1>
         <p>
-            Buchholz Reisen steht für sichere Busfahrten, zuverlässige Planung und persönliche Betreuung —
-            vom täglichen Schülerverkehr bis zur komfortablen Gruppenreise.
+            Ob täglicher Schulverkehr, Vereinsausflug, Firmenveranstaltung oder Gruppenreise.
+            Buchholz Reisen steht für zuverlässige Fahrten, persönliche Betreuung und Erfahrung aus über sieben Jahrzehnten.
         </p>
 
         <div class="buttons">
-            <a class="btn primary" href="tel:06888222">Jetzt anrufen</a>
-            <a class="btn secondary" href="#kontakt">Fahrt anfragen</a>
+            <a class="btn primary" href="#kontakt">Fahrt anfragen</a>
+            <a class="btn secondary" href="tel:06888222">Jetzt anrufen</a>
         </div>
     </div>
 </header>
 
 <section>
-    <h2>Professionelle Buslösungen aus Lebach-Steinbach</h2>
+    <h2>Verlässlich unterwegs im Saarland und darüber hinaus</h2>
     <p class="lead">
-        Ob Verein, Schule, Unternehmen, Gemeinde oder Reiseveranstalter:
-        Wir bringen Menschen zuverlässig ans Ziel. Mit erfahrenen Fahrerinnen und Fahrern,
-        gepflegtem Fuhrpark und einem Team, das weiß, worauf es bei Gruppenfahrten ankommt.
+        Seit Generationen vertrauen Vereine, Schulen, Unternehmen und Reiseveranstalter auf Buchholz Reisen.
+        Nicht nur wegen gepflegter Fahrzeuge, sondern weil jede Fahrt sorgfältig geplant und verantwortungsvoll durchgeführt wird.
     </p>
 </section>
 
 <section id="leistungen">
-    <h2>Unsere Leistungen</h2>
+    <h2>Für alle, die gemeinsam unterwegs sind</h2>
 
     <div class="grid">
         <div class="card">
             <div class="icon">🚌</div>
-            <h3>Gruppen- & Vereinsfahrten</h3>
-            <p>Ausflüge, Tagesfahrten, Mehrtagesreisen und Vereinsfahrten — individuell geplant und zuverlässig durchgeführt.</p>
+            <h3>Vereine und Gruppen</h3>
+            <p>
+                Ob Tagesausflug, Jubiläumsfahrt oder mehrtägige Reise.
+                Wir kümmern uns darum, dass die gemeinsame Zeit bereits mit der Anreise angenehm beginnt.
+            </p>
         </div>
 
         <div class="card">
             <div class="icon">🎒</div>
-            <h3>Schülerbeförderung</h3>
-            <p>Sichere und verlässliche Beförderung von Schülerinnen und Schülern im täglichen Verkehr.</p>
+            <h3>Schulen und Schülerverkehr</h3>
+            <p>
+                Jeden Tag sicher zur Schule und wieder nach Hause.
+                Erfahrung, Zuverlässigkeit und Verantwortung stehen dabei an erster Stelle.
+            </p>
         </div>
 
         <div class="card">
             <div class="icon">🌍</div>
             <h3>Reiseveranstalter</h3>
-            <p>Komfortable Buskapazitäten für Reiseveranstalter, Gruppenreisen, Rundreisen und Sonderfahrten.</p>
+            <p>
+                Für geplante Reisen, Rundfahrten und Sonderfahrten bieten wir passende Buskapazitäten
+                und ein Team, das weiß, worauf es unterwegs ankommt.
+            </p>
         </div>
 
         <div class="card">
             <div class="icon">🏢</div>
-            <h3>Firmen & Gemeinden</h3>
-            <p>Shuttlefahrten, Betriebsausflüge, Veranstaltungsverkehr und individuelle Mobilitätslösungen.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">🛣️</div>
-            <h3>Linienverkehr</h3>
-            <p>Erfahrung im Linienverkehr mit geschultem Fahrpersonal und zuverlässiger Einsatzplanung.</p>
-        </div>
-
-        <div class="card">
-            <div class="icon">⭐</div>
-            <h3>Komfort-Reisebusse</h3>
-            <p>Angenehm reisen mit modernen Fahrzeugen, gepflegtem Innenraum und routinierten Fahrern.</p>
+            <h3>Firmen und Veranstaltungen</h3>
+            <p>
+                Ob Betriebsausflug, Shuttle oder Eventfahrt.
+                Wir bringen Gäste, Teams und Besucher entspannt und pünktlich ans Ziel.
+            </p>
         </div>
     </div>
 </section>
 
-<div class="dark">
-    <div class="dark-inner">
-        <h2>Zahlen, die Vertrauen schaffen</h2>
+<div class="stats-wrap">
+    <div class="stats-inner">
+        <h2>Erfahrung, auf die man sich verlassen kann</h2>
 
         <div class="stats">
             <div class="stat"><strong>1951</strong>gegründet</div>
             <div class="stat"><strong>30+</strong>Mitarbeiter</div>
-            <div class="stat"><strong>60+</strong>Jahre Familienbetrieb</div>
             <div class="stat"><strong>2.</strong>Generation</div>
+            <div class="stat"><strong>Täglich</strong>im Einsatz</div>
         </div>
     </div>
 </div>
@@ -440,15 +494,23 @@ footer{
 <section id="unternehmen">
     <div class="split">
         <div>
-            <h2>Ein Unternehmen mit Geschichte und Verantwortung</h2>
+            <h2>Ein Familienunternehmen mit Verantwortung</h2>
             <p>
-                Buchholz Reisen wurde 1951 von Helmut und Hedwig Buchholz in Lebach-Steinbach gegründet.
-                Heute führt Michael Buchholz das Unternehmen als Geschäftsführer in zweiter Generation.
+                Buchholz Reisen wurde 1951 in Lebach Steinbach gegründet.
+                Aus einem regionalen Familienbetrieb ist über die Jahre ein verlässliches Busunternehmen geworden,
+                das heute für Schulen, Vereine, Reiseveranstalter und Unternehmen unterwegs ist.
             </p>
             <p>
-                Das Unternehmen verbindet gewachsene Erfahrung mit moderner Organisation.
-                Im Mittelpunkt stehen Sicherheit, Zuverlässigkeit und ein persönlicher Umgang mit Kunden und Fahrgästen.
+                Michael Buchholz führt das Unternehmen in zweiter Generation.
+                Der persönliche Kontakt zu Kunden, Partnern und Fahrgästen ist bis heute ein wichtiger Teil der Unternehmenskultur.
             </p>
+
+            <div class="quote">
+                <strong>Persönlich erreichbar, verbindlich in der Planung und zuverlässig auf der Straße.</strong>
+                <p>
+                    Genau diese Haltung prägt Buchholz Reisen seit Jahrzehnten.
+                </p>
+            </div>
         </div>
 
         <div class="photo">
@@ -457,61 +519,98 @@ footer{
     </div>
 </section>
 
-<section id="fuhrpark">
+<section>
     <div class="split">
         <div class="photo">
-            <img src="IMG_1EC11945-CC71-4A8C-8417-2D39F0914E9D.jpeg" alt="Buchholz Reisen Bus Logo">
+            <img src="IMG_1EC11945-CC71-4A8C-8417-2D39F0914E9D.jpeg" alt="Buchholz Reisen Bus">
         </div>
 
         <div>
-            <h2>Fuhrpark für Alltag, Schule und Reise</h2>
+            <h2>Fahrzeuge für Alltag, Schule und Reise</h2>
             <p>
-                Vom Linienbus bis zum komfortablen Reisebus: Buchholz Reisen bietet passende Fahrzeuge
-                für unterschiedliche Einsätze — zuverlässig geplant und professionell betreut.
+                Vom Linienverkehr bis zur komfortablen Gruppenfahrt:
+                Der Fuhrpark von Buchholz Reisen ist auf unterschiedliche Einsätze vorbereitet.
             </p>
             <p>
-                Für Schulen, Vereine und Reiseveranstalter zählt nicht nur der Bus selbst,
-                sondern auch die Organisation dahinter: pünktlich, sicher und verbindlich.
+                Entscheidend ist dabei nicht nur der Bus selbst.
+                Entscheidend ist die Organisation dahinter.
+                Gute Planung, erfahrenes Fahrpersonal und ein Team, das auch bei Sonderwünschen lösungsorientiert bleibt.
             </p>
         </div>
     </div>
 </section>
 
-<div class="band">
-    <div class="band-inner">
-        <h2>Bereit für die nächste Fahrt?</h2>
+<div class="alps">
+    <div class="alps-inner">
+        <h2>Jede Reise beginnt mit Vertrauen.</h2>
         <p>
-            Ob Klassenfahrt, Vereinsausflug, Gruppenreise oder Shuttle:
-            Wir beraten Sie persönlich und finden die passende Lösung.
+            Wenn Menschen gemeinsam unterwegs sind, zählt mehr als nur die Strecke.
+            Es zählt das gute Gefühl, in sicheren Händen zu sein.
         </p>
-        <a class="btn primary" href="#kontakt">Jetzt Anfrage stellen</a>
+        <a class="btn primary" href="#kontakt">Fahrt anfragen</a>
     </div>
 </div>
 
-<section>
-    <h2>Sicherheit beginnt beim Team</h2>
-    <p class="lead">
-        Erfahrene Fahrerinnen und Fahrer, regelmäßige Schulungen und ein verantwortungsvoller Umgang
-        mit Fahrzeugen und Fahrgästen sorgen dafür, dass jede Fahrt gut vorbereitet startet.
-    </p>
+<section id="jobs">
+    <h2>Karriere bei Buchholz Reisen</h2>
+
+    <div class="jobs">
+        <h3>Steigen Sie bei uns ein</h3>
+        <p>
+            Jeden Tag sorgen unsere Fahrerinnen und Fahrer dafür, dass Schülerinnen und Schüler sicher zur Schule kommen,
+            Vereine ihre Ausflüge genießen können und Reisegruppen entspannt unterwegs sind.
+        </p>
+        <p>
+            Dafür suchen wir Menschen, die Verantwortung übernehmen, gerne unterwegs sind und Freude am Umgang mit anderen haben.
+        </p>
+
+        <div class="job-grid">
+            <div class="job-box">
+                <h4>Busfahrer m/w/d</h4>
+                <ul>
+                    <li>Führerschein Klasse D oder DE</li>
+                    <li>Zuverlässigkeit und freundliches Auftreten</li>
+                    <li>Freude am Umgang mit Fahrgästen</li>
+                    <li>Verantwortungsbewusstes Arbeiten</li>
+                </ul>
+            </div>
+
+            <div class="job-box">
+                <h4>Das erwartet Sie</h4>
+                <ul>
+                    <li>Familiäres Arbeitsumfeld</li>
+                    <li>Moderne und gepflegte Fahrzeuge</li>
+                    <li>Sicherer Arbeitsplatz</li>
+                    <li>Langfristige Perspektive</li>
+                </ul>
+            </div>
+        </div>
+
+        <p>
+            Sie möchten Teil unseres Teams werden?
+            Dann freuen wir uns auf Ihre Bewerbung.
+        </p>
+
+        <a class="btn primary" href="mailto:info@buchholz-reisen.de?subject=Bewerbung%20als%20Busfahrer">Jetzt bewerben</a>
+    </div>
 </section>
 
 <section id="kontakt">
-    <h2>Kontakt</h2>
+    <h2>Kontakt aufnehmen</h2>
 
     <div class="contact">
         <div class="card">
             <h3>Buchholz Reisen GmbH</h3>
-            <p><strong>Adresse:</strong><br>In der Au 14<br>66822 Lebach-Steinbach</p>
-            <p><strong>Telefon:</strong><br><a href="tel:06888222">06888 / 222</a></p>
-            <p><strong>Fax:</strong><br>06888 / 57071</p>
-            <p><strong>E-Mail:</strong><br><a href="mailto:info@buchholz-reisen.de">info@buchholz-reisen.de</a></p>
+            <p><strong>Adresse</strong><br>In der Au 14<br>66822 Lebach Steinbach</p>
+            <p><strong>Telefon</strong><br><a href="tel:06888222">06888 / 222</a></p>
+            <p><strong>Fax</strong><br>06888 / 57071</p>
+            <p><strong>E-Mail</strong><br><a href="mailto:info@buchholz-reisen.de">info@buchholz-reisen.de</a></p>
         </div>
 
         <div class="card">
             <h3>Fahrt anfragen</h3>
             <form>
-                <input type="text" placeholder="Name / Verein / Firma">
+                <input type="text" placeholder="Name, Verein oder Firma">
                 <input type="email" placeholder="E-Mail">
                 <input type="tel" placeholder="Telefon">
                 <textarea rows="5" placeholder="Wohin soll die Fahrt gehen? Wann? Wie viele Personen?"></textarea>
@@ -528,7 +627,7 @@ footer{
         src="https://www.google.com/maps?q=In%20der%20Au%2014%2C%2066822%20Lebach&output=embed"
         width="100%"
         height="360"
-        style="border:0;border-radius:22px;"
+        style="border:0;border-radius:24px;"
         loading="lazy">
     </iframe>
 </section>
@@ -549,13 +648,13 @@ footer{
         Geschäftsführer: Michael Buchholz
     </p>
     <p class="note">
-        Demo-Website. Rechtliche Angaben wie Registergericht, Handelsregisternummer,
-        Umsatzsteuer-ID und Datenschutz sollten vor Veröffentlichung final geprüft werden.
+        Demo-Website. Rechtliche Angaben wie Handelsregister, Umsatzsteuer-ID und Datenschutz
+        sollten vor echter Veröffentlichung final geprüft und vollständig ergänzt werden.
     </p>
 </section>
 
 <footer>
-    © 2026 Buchholz Reisen GmbH · Lebach-Steinbach
+    © 2026 Buchholz Reisen GmbH · Lebach Steinbach
 </footer>
 
 <div class="floating">
